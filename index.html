@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+  </head>
+  <body>
+    <section id="bg" class="backgrounds">
+      <img src="./images/pattern-bg.svg" alt="" class="backgrounds--picture" />
+      <img
+        src="./images/pattern-quotes.svg"
+        alt=""
+        class="backgrounds--quotes"
+      />
+      <img src="./images/pattern-curve.svg" alt="" class="backgrounds--curve" />
+    </section>
+    <section id="testimonial_1" class="testimonial">
+      <div class="testimonial-image">
+        <img
+          src="./images/image-tanya.jpg"
+          class="active"
+          alt=""
+          id="img_tanya"
+        />
+        <img src="./images/image-john.jpg" class="hide" alt="" id="img_john" />
+        <div class="buttons">
+          <button class="btn btn-prev" onclick="movePrev()">
+            <img src="./images/icon-prev.svg" alt="" />
+          </button>
+          <button class="btn btn-next" onclick="moveNext()">
+            <img src="./images/icon-next.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="content-section">
+        <div class="content active" id="content_tanya">
+          <p>
+            “ I’ve been interested in coding for a while but never taken the
+            jump, until now. I couldn’t recommend this course enough. I’m now in
+            the job of my dreams and so excited about the future. ”
+          </p>
+          <div>
+            <span class="name">Tanya Sinclair</span>
+            <br />
+            <span class="job">UX Engineer</span>
+          </div>
+        </div>
+        <div class="content hide" id="content_john">
+          <p>
+            “ If you want to lay the best foundation possible I’d recommend
+            taking this course. The depth the instructors go into is incredible.
+            I now feel so confident about starting up as a professional
+            developer. ”
+          </p>
+          <div>
+            <span class="name">John Tarkpor</span>
+            <br />
+            <span class="job">Junior Front-end Developer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
